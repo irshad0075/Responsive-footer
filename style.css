@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #ada9a9;
+
+  color: rgb(107, 99, 99);
+}
+
+footer {
+  margin-top: 275px;
+  font-size: 1rem;
+  width: 100%;
+  background-color: black;
+  min-height: 70%;
+  position: sticky;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 45px;
+}
+
+/* copy right div  */
+
+.copyright {
+  margin-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.copyright:hover {
+  color: white;
+}
+
+/* About us div */
+
+.aboutus h2 {
+  color: white;
+  padding-top: 25px;
+}
+
+.aboutus p {
+  margin-top: 17px;
+}
+
+.styleborder {
+  /* background-color: red; */
+  border: 2px solid red;
+  width: 38px;
+  height: 3px;
+}
+
+.aboutus ul {
+  margin-top: 27px;
+  display: flex;
+  gap: 6px;
+}
+.aboutus li {
+  background-color: rgb(26, 24, 24);
+  display: inline;
+  border: 1px solid black;
+  width: 45px;
+  height: 40px;
+  padding: 12px;
+}
+
+.aboutus li:hover {
+  background-color: red;
+  height: 45px;
+}
+
+/* Quick Links div */
+
+.Links h2 {
+  color: white;
+  margin-top: 25px;
+  /* padding-top: 20px; */
+  padding-bottom: 8px;
+}
+
+.Links ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.Links ul li {
+  list-style: none;
+}
+.Links ul a {
+  text-decoration: none;
+  color: rgb(107, 99, 99);
+}
+
+.Links ul a:hover {
+  color: white;
+}
+
+/* contacts div */
+
+.Contacts h2 {
+  color: white;
+  padding-bottom: 25px;
+}
+
+.Contacts ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.Contacts ul li {
+  list-style: none;
+}
+.Contacts ul a {
+  text-decoration: none;
+  color: rgb(107, 99, 99);
+}
+
+.Contacts ul a:hover {
+  color: white;
+}
+
+/* Responsive part  */
+
+@media all and (max-width: 945px) {
+  html {
+    font-size: 16px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: self-start;
+  }
+  footer {
+    width: 100%;
+    background-color: black;
+    height: 100%;
+    position: sticky;
+  }
+
+  .aboutus {
+    margin-left: 40px;
+  }
+
+  .Links {
+    margin-left: 40px;
+  }
+
+  .Contacts {
+    margin-left: 40px;
+    margin-top: 32px;
+  }
+}
+
+@media all and (max-width: 335px) and (min-width: 200px) {
+  .aboutus p {
+    font-size: 14px;
+    overflow: scroll;
+  }
+}
+
+@media all and (max-width: 1500px) {
+  footer {
+    margin-top: 325px;
+  }
+}
